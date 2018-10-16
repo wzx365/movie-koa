@@ -1,0 +1,28 @@
+extends ./layouts/default
+
+block title
+    title Koa 电影首页
+
+block content
+    include ./includes/header
+
+    .container-fluid
+        .sidebar
+        .content
+            .row
+                .col-md-6
+                    .card
+                        img.card-img-top(src='https://goss2.vcg.com/creative/vcg/800/new/1c01e06ad6a24e17b924cd46c84df1a0.jpg',data-video='http://video.iblack7.com/tgGnZRn3W4Ajw6PGcA_9Z.mp4')
+                        .card-body 
+                            h4.card-title 电影标题
+                            p.card-desc 电影简介
+                        .card-footer
+                            small.text-muted 1天前更新
+                .col-md-6
+                    .card
+                        img.card-img-top(src='https://goss.vcg.com/creative/vcg/800/new/d818ccb1ad204f05a628b424d0644d21.jpg',data-video='http://video.iblack7.com/tgGnZRn3W4Ajw6PGcA_9Z.mp4')
+                        .card-body 
+                            h4.card-title 电影标题
+                            p.card-desc 电影简介
+                        .card-footer
+                            small.text-muted 1天前更新

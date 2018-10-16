@@ -1,0 +1,25 @@
+{
+  "name": "movie-koa",
+  "version": "1.0.0",
+  "description": "wzx build a movie project",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js",
+    "crawler": "node server/task"
+  },
+  "keywords": [
+    "koa",
+    "movie"
+  ],
+  "author": "wzx",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "koa": "^2.5.3",
+    "koa-session": "^5.9.0",
+    "koa-views": "^6.1.4",
+    "pug": "^2.0.3",
+    "puppeteer": "^1.9.0"
+  }
+}

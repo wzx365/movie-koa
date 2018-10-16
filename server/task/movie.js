@@ -20,7 +20,7 @@ const { resolve } = require('path')
     child.on('exit', code => {
         if (invoked) return 
 
-        invoked = false 
+        invoked = true 
 
         let err = code === 0 ? null : new Error('exit code ' + code)
 
@@ -28,7 +28,7 @@ const { resolve } = require('path')
     })
 
     child.on('message', res => {
-        let result = res.result
+        let result = res.data
         console.log('------message-----')
         console.log(result)
     })

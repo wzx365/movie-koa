@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/index.js",
-    "crawler": "node server/task"
+    "crawler": "node server/task/movie.js"
   },
   "keywords": [
     "koa",
@@ -20,6 +20,8 @@
     "koa-session": "^5.9.0",
     "koa-views": "^6.1.4",
     "pug": "^2.0.3",
-    "puppeteer": "^1.9.0"
+    "puppeteer": "^1.9.0",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5"
   }
 }
